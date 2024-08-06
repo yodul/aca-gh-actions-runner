@@ -38,7 +38,7 @@ jobs:
         id: generate-access-token
         uses: actions/create-github-app-token@v1
         with:
-          app-id: ${{ secrets.GH_APP_ID }}
+          app-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
   
       - name: Update GitHub variables
